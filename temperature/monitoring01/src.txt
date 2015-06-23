@@ -1,0 +1,35 @@
+#!/bin/bash
+#
+# update .rrd database with CPU temperature
+#
+
+DATA_DIR="/opt/bin/Git/Raspi/temperature/monitoring01"
+
+cd ${DATA_DIR}
+if [ $? -ne 0 ]
+then
+  echo "ERROR: Cannot cd to ${DATA_DIR}, script: $0"
+  exit 99
+fi
+
+# create database if not exists
+[ -f cputemp.rrd ] || {
+    /usr/bin/rrdtool create cputemp.rrd –step 300 \
+    DS:cputemp:GAUGE:1200:U:U \
+    RRA:AVERAGE:0.5:1:3200 \
+    RRA:AVERAGE:0.5:6:3200 \
+    RRA:AVERAGE:0.5:36:3200 \
+    RRA:AVERAGE:0.5:144:3200 \
+    RRA:AVERAGE:0.5:1008:3200 \
+    RRA:AVERAGE:0.5:4320:3200 \
+    RRA:AVERAGE:0.5:52560:3200 \
+    RRA:AVERAGE:0.5:525600:3200
+}
+
+# read the temperature and convert “59234″ into “59.234″ (degrees celsius)
+TEMPERATURE=`cat /sys/class/thermal/thermal_zone0/temp`
+TEMPERATURE=`echo -n ${TEMPERATURE:0:2}; echo -n .; echo -n ${TEMPERATURE:2}`
+
+/usr/bin/rrdtool update cputemp.rrd `date +”%s”`:$TEMPERATURE
+
+/usr/bin/rrdtool graph cputemp.png DEF:temp=cputemp.rrd:cputemp:AVERAGE LINE2:temp#00FF00 –width 800 
