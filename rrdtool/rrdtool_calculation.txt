@@ -1,0 +1,7 @@
+This is the accompanying README for the calc sheet with the same name.
+
+I read https://oss.oetiker.ch/rrdtool/tut/rrd-beginners.en.html and tried to put things together for me.
+The result was put as an ongoing work in the calc sheet which I created with the help of LibreOffice v4.2.8.2.
+
+Hoping that this tiny piece of work might help some people I put it on the internet.
+
