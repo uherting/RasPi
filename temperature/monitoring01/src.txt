@@ -1,7 +1,18 @@
 #!/bin/bash
 #
-# update .rrd database with CPU temperature
+# - create .rrd database if necessary
+# - update .rrd database with CPU temperature
+# - create graph based on stored values
 #
+
+#
+#
+# TODO
+# 
+# - get rid of hardcoded sensor names
+#
+#
+
 
 DATA_DIR="/opt/bin/Git/Raspi/temperature/monitoring01"
 
