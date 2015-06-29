@@ -1,0 +1,18 @@
+In order to be able to look at the data over different time-scales, we want to collect:
+
+    with 5 minute granularity (1 base interval) for  two days (12*24*2=576 samples)
+    with 15 minute granularity (3 base intervals) for  two weeks (4*24*7*2=1344 samples)
+    with 1 hour granularity (12 base intervals) for two months (24*31*2=1488 samples)
+    with 6 hour granularity (72 base intervals) for 16 months (4*31*16=1984 samples)
+
+rrdtool create /opt/templog/data/templog.rrd \
+--step 300   \
+DS:internal:GAUGE:600:-55:125  \
+DS:external:GAUGE:600:-55:125  \
+DS:heat:GAUGE:600:-55:125  \
+RRA:AVERAGE:0.5:1:576    \
+RRA:AVERAGE:0.5:3:1344   \
+RRA:AVERAGE:0.5:12:1488  \
+RRA:AVERAGE:0.5:72:1984  \
+RRA:MIN:0.5:72:1984      \
+RRA:MAX:0.5:72:1984
