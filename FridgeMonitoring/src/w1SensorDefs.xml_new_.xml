@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data>
+	<floor name="3">
+		<room roomName="kitchen" roomNameDE="Kueche">
+		</room>
+	</floor>
+	<floor name="MyFlat">
+		<room roomNameDE="SZ" roomNameEN="bedroom" sensorId="asd" />
+		<room roomNameDE="Kueche" roomNameEN="kitchen" sensorId="tt" />
+		<room roomNameDE="WZ" roomNameEN="lounge" sensorId="" />
+	</floor>
+</data>

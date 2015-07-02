@@ -2,8 +2,10 @@
 __pycache__/
 *.py[cod]
 
-# PyDev Eclipse dir 
+# PyDev / Eclipse dir 
 .metadata
+.project
+.pydevproject
 
 # C extensions
 *.so
