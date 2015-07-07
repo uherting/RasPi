@@ -1,8 +1,11 @@
 #!/usr/bin/python3
+
+
 """This is a first try to read a XML config file and get sensors
  which were added during the program run. In case sensors were 
  added  a new xml file will be written. 
 """
+
 import xml.etree.ElementTree as ET
 import os
 import time
@@ -63,13 +66,13 @@ def redef_sensor(floor_name, room_name, room, sensors_base_dir, wait_secs_for_ne
     
     return(sid)
 
-def get_backup_of_sensor_file(sensor_definition_file):
-    sensors_definition_backup_file = \
+def get_name_of_backup_sensor_file(sensor_definition_file):
+    sensors_definition_backup_filename = \
         sensor_definition_file + \
         '_backup_' + \
         datetime.datetime.fromtimestamp(time.time()).strftime('%Y%m%d_%H%M%S') + \
         '.xml'
-    return(sensors_definition_backup_file)
+    return(sensors_definition_backup_filename)
 
 def get_new_name_of_sensor_file(sensor_definition_file):
     sensors_definition_backup_file = \
@@ -121,7 +124,7 @@ for floor in root.findall('floor'):
                     # write a backup only if necessary and not done during this run
                     if (backup_done == 0):
                         backup_done = 1
-                        tree.write(get_backup_of_sensor_file(SENSORS_DEFINITION_FILE) ,
+                        tree.write(get_name_of_backup_sensor_file(SENSORS_DEFINITION_FILE) ,
                                                              'UTF-8',
                                                              'version="1.0"')
                     # apply the change to the XML in memory
