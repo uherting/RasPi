@@ -1,0 +1,33 @@
+
+rrdtool create temperature.rrd \
+    --start now --step 60 \  # interval of 1m
+    DS:a:GAUGE:120:-50:50 \  # data range of -50 to +50 (degrees C)
+    DS:b:GAUGE:120:-50:50 \  # data range of -50 to +50 (degrees C)
+    DS:c:GAUGE:120:-50:50 \  # data range of -50 to +50 (degrees C)
+    DS:d:GAUGE:120:-50:50 \  # data range of -50 to +50 (degrees C)
+    DS:e:GAUGE:120:-50:50 \  # data range of -50 to +50 (degrees C)
+    RRA:AVERAGE:0.5:1:12 \   # calculated average
+    RRA:AVERAGE:0.5:1:288 \  # calculated average
+    RRA:AVERAGE:0.5:12:168 \ # calculated average
+    RRA:AVERAGE:0.5:12:720 \ # calculated average 
+    RRA:AVERAGE:0.5:288:365  # calculated average 
+	
+This creates a database with a base data interval of 1m (–step 60), with a data range of -50 to +50 (degrees C), and some calculated averages for 6hours, day, week, month and year.
+
+From https://oss.oetiker.ch/rrdtool/tut/rrd-beginners.en.html
+consolidated data point (CDP) 
+Primary Data Point (PDP)
+DST (Data Source Type) 
+
+rrdtool create target.rrd \
+         --start 1023654125 \
+         --step 300 \
+         DS:mem:GAUGE:600:0:671744 \
+         RRA:AVERAGE:0.5:12:24 \ # 12 PDP (each at a frequency of 1/300s (step width) makes 1 CDP, 24 CDPs are kept => 12 * 300s = 1h; 12 * 300s * 24samples = 24h ==> 24h of data
+         RRA:AVERAGE:0.5:288:31
+
+From http://www.cuddletech.com/articles/rrd/
+RRA:AVERAGE:0.5:12:24: 0.5 ==> XFF
+XFiles Factor (XFF), this is the percentage(!) of PDPs that can be unknown without making the recorded value unknown; 0.5 => 50%
+
+See http://www.cuddletech.com/articles/rrd/ar01s02.html for details on syntax
