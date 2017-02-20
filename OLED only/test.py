@@ -32,15 +32,6 @@ duh.show_info(debug)
 import Adafruit_SSD1306
 from PIL import Image, ImageDraw, ImageFont
 
-# Einbindung DHT22 Feuchtigkeits- und Temperatursensor
-import Adafruit_DHT
-
-# DHT22 Sensor einrichten
-dhtSensorTyp = 22  # Typ 22 (weiß) - Typ 11 (blau)
-dhtSensorGpio = 21  # an Pin 40 - GPIO 21 angeschlossen
-dhtSensor_aktiv = True  # angeschlossenen Sensor für Display aktivieren
-dhtSensorTemperatur = ""  # Temperaturwert
-dhtSensorLuftfeuchtigkeit = ""  # Luftfeuchtigkeitwert
 
 # Global für Anzahl der Temperaturanzeigen auf Display
 displaySensorBezeichnung = ""
@@ -49,7 +40,6 @@ a = u"°"  # damit Sonderzeichen korrekt dargestellt wird
 
 # Global für Aktivitätsstatus einzelner Threads/Programmteile
 Display_aktiv = True
-Thread_Sensoren_aktiv = True
 
 #
 # functions
@@ -73,22 +63,6 @@ def aktuelleZeit(werta, wertb):
     else:
         ermittelteZeit = zeitpunktMessung
     return ermittelteZeit
-
-
-def sensorenAbfrage():
-    # Thread zum Auslesen der Sensoren
-    global dhtSensor_aktiv, dhtSensorGpio, dhtSensorTyp, dhtSensorTemperatur, dhtSensorLuftfeuchtigkeit
-    print
-    "Thread zur Sensorenabfrage gestartet."
-    while dhtSensor_aktiv:
-        # Abfrage Luftfeuchtigkeit und Temperatur
-        luftfeuchtigkeit, temperatur = Adafruit_DHT.read_retry(dhtSensorTyp, dhtSensorGpio)
-        dhtSensorLuftfeuchtigkeit = '%6.2f' % luftfeuchtigkeit  # Sensorwert auf 2 Dezimalstellen formatiert
-        dhtSensorTemperatur = '%6.2f' % temperatur  # Sensorwert auf 2 Dezimalstellen formatiert
-        print
-        "Werte DHT22 - Luftfeuchtigkeit = ", dhtSensorLuftfeuchtigkeit, " Temperatur = ", dhtSensorTemperatur
-        displaySensorwertAusgabe()
-        time.sleep(5)  # notwendige Pause von mindestens 2 Sekunden - siehe Spezifikation des verwendeten Sensors
 
 
 def displaySensorwertAusgabe():
