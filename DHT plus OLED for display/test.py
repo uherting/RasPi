@@ -3,7 +3,7 @@
 #
 # test script for ...
 # playing around with a DHT22 sensor attached to a GPIO pin of the raspberry pi and a
-# OLED for displaying the values
+# OLED for displaying the values via I2C
 #
 
 import sys
@@ -87,11 +87,11 @@ def sensorenAbfrage():
         dhtSensorTemperatur = '%6.2f' % temperatur  # Sensorwert auf 2 Dezimalstellen formatiert
         print
         "Werte DHT22 - Luftfeuchtigkeit = ", dhtSensorLuftfeuchtigkeit, " Temperatur = ", dhtSensorTemperatur
-        displaySensorwertAusgabe()
+        displaySensorwertAusgabePreparation()
         time.sleep(5)  # notwendige Pause von mindestens 2 Sekunden - siehe Spezifikation des verwendeten Sensors
 
 
-def displaySensorwertAusgabe():
+def displaySensorwertAusgabePreparation():
     global displaySensorBezeichnung, displayTempWert, a, dhtSensorLuftfeuchtigkeit, dhtSensorTemperatur
     displaySensorBezeichnung = "DHT22 Sensor :"
     displayTempWert = dhtSensorLuftfeuchtigkeit + " % " + dhtSensorTemperatur + " " + a + "C"

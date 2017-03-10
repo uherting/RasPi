@@ -2,8 +2,7 @@
 
 #
 # test script for ...
-# playing around with a DHT22 sensor attached to a GPIO pin of the raspberry pi and a
-# OLED for displaying the values
+# playing around with a OLED for displaying via I2C
 #
 
 import sys
@@ -34,8 +33,8 @@ from PIL import Image, ImageDraw, ImageFont
 
 
 # Global für Anzahl der Temperaturanzeigen auf Display
-displaySensorBezeichnung = ""
-displayTempWert = ""
+displaySensorBezeichnung = "DHT1"
+displayTempWert = "123"
 a = u"°"  # damit Sonderzeichen korrekt dargestellt wird
 
 # Global für Aktivitätsstatus einzelner Threads/Programmteile
@@ -63,13 +62,6 @@ def aktuelleZeit(werta, wertb):
     else:
         ermittelteZeit = zeitpunktMessung
     return ermittelteZeit
-
-
-def displaySensorwertAusgabe():
-    global displaySensorBezeichnung, displayTempWert, a, dhtSensorLuftfeuchtigkeit, dhtSensorTemperatur
-    displaySensorBezeichnung = "DHT22 Sensor :"
-    displayTempWert = dhtSensorLuftfeuchtigkeit + " % " + dhtSensorTemperatur + " " + a + "C"
-
 
 # Display einrichten
 
@@ -120,22 +112,21 @@ draw.text((x, top + 25), 'Start', font=font_b, fill=255)
 disp.image(image)
 disp.display()
 
-# Abfrage des DHT Sendor in eigenem Thread starten
-sensorenAbfrageThread = threading.Thread(target=sensorenAbfrage)  # Sensorenabfrage
-sensorenAbfrageThread.start()
-time.sleep(5)  # damit alle Sensorwerte zum Start eingelesen sind
+# no DHT so we do not setup the thread for this
 
-# Hauptroutine
+#  Hauptroutine
 # TODO: Hauptroutine edited by UH finishes after z loops
 z = 0
 # while Display_aktiv:
 while z < 5:
-    draw.rectangle((0, 0, width, height), outline=0, fill=0)  # Display leeren
     displayTime = aktuelleZeit("time", "date")  # bei Abfrage "date","time" ändert die Reihenfolge der Ausgabe
+
+    draw.rectangle((0, 0, width, height), outline=0, fill=0)  # Display leeren
     draw.text((x, top), displaySensorBezeichnung, font=font, fill=255)
     draw.text((x, top + 20), displayTempWert, font=font_c, fill=255)
     draw.line((x, top + 45, x + width, top + 45), fill=255)
     draw.text((x, top + 50), displayTime, font=font, fill=255)
     disp.image(image)
     disp.display()
+
     z = z + 1
