@@ -56,30 +56,31 @@ Thread_Sensoren_aktiv = True
 # -----------------------------
 
 
-def aktuelleZeit(werta, wertb):
-    zeitpunktMessung = time.localtime()
-    jahr, monat, tag = zeitpunktMessung[0:3]
-    stunde, minute, sekunde = zeitpunktMessung[3:6]
-    systemUhrzeit = str(stunde).zfill(2) + ":" + str(minute).zfill(2) + ":" + str(sekunde).zfill(2)
-    systemDatum = str(tag).zfill(2) + "." + str(monat).zfill(2) + "." + str(jahr)
-    if werta == "time" and wertb == "date":
-        ermittelteZeit = systemUhrzeit + " " + systemDatum
-    elif werta == "date" and wertb == "time":
-        ermittelteZeit = systemDatum + " " + systemUhrzeit
-    elif werta == "time" and wertb == "":
-        ermittelteZeit = systemUhrzeit
-    elif werta == "date" and wertb == "":
-        ermittelteZeit = systemDatum
-    else:
-        ermittelteZeit = zeitpunktMessung
-    return ermittelteZeit
+def current_time(val_a, val_b):
+    local_time = time.localtime()
+    jahr, monat, tag = local_time[0:3]
+    stunde, minute, sekunde = local_time[3:6]
+    system_time = str(stunde).zfill(2) + ":" + str(minute).zfill(2) + ":" + str(sekunde).zfill(2)
+    system_date = str(tag).zfill(2) + "." + str(monat).zfill(2) + "." + str(jahr)
+    determined_time = ""
 
+    if val_a == "time" and val_b == "date":
+        determined_time = system_time + " " + system_date
+    elif val_a == "date" and val_b == "time":
+        determined_time = system_date + " " + system_time
+    elif val_a == "time" and val_b == "":
+        determined_time = system_time
+    elif val_a == "date" and val_b == "":
+        determined_time = system_date
+    else:
+        determined_time = local_time
+    return determined_time
 
 def sensorenAbfrage():
     # Thread zum Auslesen der Sensoren
     global dhtSensor_aktiv, dhtSensorGpio, dhtSensorTyp, dhtSensorTemperatur, dhtSensorLuftfeuchtigkeit
-    print
-    "Thread zur Sensorenabfrage gestartet."
+    print("Thread zur Sensorenabfrage gestartet.")
+
     while dhtSensor_aktiv:
         # Abfrage Luftfeuchtigkeit und Temperatur
         luftfeuchtigkeit, temperatur = Adafruit_DHT.read_retry(dhtSensorTyp, dhtSensorGpio)
@@ -146,7 +147,7 @@ draw.text((x, top + 25), 'Start', font=font_b, fill=255)
 disp.image(image)
 disp.display()
 
-# Abfrage des DHT Sendor in eigenem Thread starten
+# Abfrage des DHT Sensors in eigenem Thread starten
 sensorenAbfrageThread = threading.Thread(target=sensorenAbfrage)  # Sensorenabfrage
 sensorenAbfrageThread.start()
 time.sleep(5)  # damit alle Sensorwerte zum Start eingelesen sind
@@ -157,7 +158,7 @@ z = 0
 # while Display_aktiv:
 while z < 5:
     draw.rectangle((0, 0, width, height), outline=0, fill=0)  # Display leeren
-    displayTime = aktuelleZeit("time", "date")  # bei Abfrage "date","time" ändert die Reihenfolge der Ausgabe
+    displayTime = current_time("time", "date")  # bei Abfrage "date","time" ändert die Reihenfolge der Ausgabe
     draw.text((x, top), displaySensorBezeichnung, font=font, fill=255)
     draw.text((x, top + 20), displayTempWert, font=font_c, fill=255)
     draw.line((x, top + 45, x + width, top + 45), fill=255)
