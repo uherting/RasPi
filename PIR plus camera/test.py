@@ -57,7 +57,7 @@ def current_time(val_a, val_b):
 
 
 def capture():
-    time_stamp = datetime.now().isoformat()
+    time_stamp = datetime.datetime.now().isoformat()
     camera.capture('/home/pi/%s.jpg' % time_stamp)
 
 
