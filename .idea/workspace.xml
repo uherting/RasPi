@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="22f81ae1-981b-4553-8322-3b5240466bf6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PIR plus camera/test.py" afterPath="$PROJECT_DIR$/PIR plus camera/test.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,8 +56,8 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PIR plus camera/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+            <state relative-caret-position="105">
+              <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
               <folding>
                 <element signature="e#106#116#0" expanded="true" />
               </folding>
@@ -570,7 +571,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491395221871</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="minor changes accoding PEPs">
+      <created>1491395274068</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1491395274068</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -654,7 +662,8 @@
     <MESSAGE value="- OLED only w/o prep of output now&#10;- OLED w/ : renamed funtion for prep of output" />
     <MESSAGE value="- DHT: renamed variables to english equivalent&#10;- PIR plus camera: added file test.py" />
     <MESSAGE value="- PIR plus camera: debugged access of datetime.now()" />
-    <option name="LAST_COMMIT_MESSAGE" value="- PIR plus camera: debugged access of datetime.now()" />
+    <MESSAGE value="minor changes accoding PEPs" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor changes accoding PEPs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1010,8 +1019,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PIR plus camera/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        <state relative-caret-position="105">
+          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding>
             <element signature="e#106#116#0" expanded="true" />
           </folding>
