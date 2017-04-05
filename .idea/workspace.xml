@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="22f81ae1-981b-4553-8322-3b5240466bf6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DHT plus OLED for display/test.py" afterPath="$PROJECT_DIR$/DHT plus OLED for display/test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OLED only/test.py" afterPath="$PROJECT_DIR$/OLED only/test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PIR plus camera/test.py" afterPath="$PROJECT_DIR$/PIR plus camera/test.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -566,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490622812914</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="- PIR plus camera: debugged access of datetime.now()">
+      <created>1491395221871</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1491395221871</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -673,9 +677,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2160">
           <caret line="147" column="14" lean-forward="true" selection-start-line="147" selection-start-column="14" selection-end-line="147" selection-end-column="14" />
-          <folding>
-            <element signature="e#173#183#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -725,9 +727,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2445">
           <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="13" />
-          <folding>
-            <element signature="e#173#183#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -759,9 +759,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2445">
           <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="13" />
-          <folding>
-            <element signature="e#173#183#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
