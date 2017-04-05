@@ -62,7 +62,6 @@ def current_time(val_a, val_b):
     stunde, minute, sekunde = local_time[3:6]
     system_time = str(stunde).zfill(2) + ":" + str(minute).zfill(2) + ":" + str(sekunde).zfill(2)
     system_date = str(tag).zfill(2) + "." + str(monat).zfill(2) + "." + str(jahr)
-    determined_time = ""
 
     if val_a == "time" and val_b == "date":
         determined_time = system_time + " " + system_date
@@ -165,4 +164,4 @@ while z < 5:
     draw.text((x, top + 50), displayTime, font=font, fill=255)
     disp.image(image)
     disp.display()
-    z = z + 1
+    z += 1

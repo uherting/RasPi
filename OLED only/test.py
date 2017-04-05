@@ -129,4 +129,5 @@ while z < 5:
     disp.image(image)
     disp.display()
 
-    z = z + 1
+    z += 1
+

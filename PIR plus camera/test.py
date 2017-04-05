@@ -29,6 +29,7 @@ import debuguh
 used_sensor_01 = MotionSensor(4)  # PIR connected to pin x
 sensor_01_aktiv = True
 led_01 = LED(16)  # LED connected to pin x
+capture_enable = False
 
 # create objects from other tool classes
 camera = PiCamera()
@@ -40,7 +41,6 @@ def current_time(val_a, val_b):
     stunde, minute, sekunde = local_time[3:6]
     system_time = str(stunde).zfill(2) + ":" + str(minute).zfill(2) + ":" + str(sekunde).zfill(2)
     system_date = str(tag).zfill(2) + "." + str(monat).zfill(2) + "." + str(jahr)
-    determined_time = ""
 
     if val_a == "time" and val_b == "date":
         determined_time = system_time + " " + system_date
@@ -62,15 +62,19 @@ def capture():
 
 
 def sensoren_abfrage():
-    global used_sensor_01, sensor_01_aktiv, led_01, camera
+    global used_sensor_01, sensor_01_aktiv, led_01, camera, capture_enable
 
     print("Thread zur Sensorenabfrage gestartet.")
 
     while sensor_01_aktiv:
         used_sensor_01.wait_for_motion()
-        led_01.on()
-        capture()
         print("Motion detected at " + current_time("time", "date"))
+
+        led_01.on()
+
+        if capture_enable:
+            capture()
+
         time.sleep(1)
         led_01.off()
 
@@ -102,4 +106,5 @@ while z < 5:
     print(displayTime)
 
     time.sleep(5)
-    z = z + 1
+
+    z += 1
