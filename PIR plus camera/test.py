@@ -23,12 +23,14 @@ from picamera import PiCamera
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + '/classes')
 
 # import custom classes
-import debuguh
+import debuguh # can be found only after sys.path.append() as it is not centrally installed
 
 # create objects from gpiozero classes
-used_sensor_01 = MotionSensor(4)  # PIR connected to pin x
+pin_motion_sensor = 4
+pin_led = 16
+used_sensor_01 = MotionSensor(pin_motion_sensor)  # PIR connected to pin x
 sensor_01_aktiv = True
-led_01 = LED(16)  # LED connected to pin x
+led_01 = LED(pin_led)  # LED connected to pin x
 capture_enable = False
 
 # create objects from other tool classes
@@ -98,11 +100,13 @@ sensorenAbfrageThread.start()
 # time.sleep(5)  # damit alle Sensorwerte zum Start eingelesen sind
 
 # Hauptroutine
-# TODO: Hauptroutine edited by UH finishes after z loops
+# TODO: main loop finishes after z loops for debugging purposes
 z = 0
 
 while z < 5:
-    displayTime = current_time("time", "date")  # bei Abfrage "date","time" ändert die Reihenfolge der Ausgabe
+    # display of time and date
+    # bei Abfrage "date","time" ändert die Reihenfolge der Ausgabe
+    displayTime = current_time("time", "date")
     print(displayTime)
 
     time.sleep(5)
