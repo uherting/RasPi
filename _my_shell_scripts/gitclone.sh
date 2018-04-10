@@ -16,6 +16,7 @@ then
     fi
   done
   cd -
+  exit 0
 fi
 
 if [ ! -d ${DIR_NAME} ]
@@ -57,12 +58,15 @@ then
     mv MFRC522-python MFRC522-python---rasplay
     uh_gitclone https://github.com/steve71/RasPiBrew.git
     uh_gitclone https://github.com/timofurrer/w1thermsensor.git
+    uh_gitclone https://github.com/python-telegram-bot/python-telegram-bot.git
 
     # clone repositories which are necessary for epsilon only
     if [ "`hostname`" == "epsilon" ]
     then
       uh_gitclone https://github.com/nodemcu/nodemcu-devkit-v1.0.git
       uh_gitclone https://github.com/nodemcu/nodemcu-firmware.git
+    else
+      uh_gitclone https://github.com/nickoala/telepot.git
     fi
 
     cd -
