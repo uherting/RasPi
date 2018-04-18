@@ -13,7 +13,7 @@
     <content url="file://$MODULE_DIR$/../../misc/picamera" />
     <content url="file://$MODULE_DIR$/../../misc/python-gpiozero" />
     <content url="file://$MODULE_DIR$/../../misc/rasplay_MFRC522-python" />
-    <orderEntry type="jdk" jdkName="Python 2.7.13 (/usr/bin/python2.7)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.5.3 (/usr/bin/python3.5)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">
