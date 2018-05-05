@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22f81ae1-981b-4553-8322-3b5240466bf6" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/perl5local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_my_shell_scripts/mantoj.pl" beforeDir="false" afterPath="$PROJECT_DIR$/_my_shell_scripts/mantoj.pl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +20,13 @@
     <favorites_list name="RasPi" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="mantoj.pl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_my_shell_scripts/mantoj.pl">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -53,6 +61,11 @@
         <option value="$PROJECT_DIR$/_my_shell_scripts/gitclone_misc.sh" />
         <option value="$PROJECT_DIR$/_my_shell_scripts/gitclone.sh" />
         <option value="$PROJECT_DIR$/PIR plus camera/test.py" />
+        <option value="$PROJECT_DIR$/MQTT_first_steps/mqtt_publisher.py" />
+        <option value="$PROJECT_DIR$/MQTT_first_steps/mqtt_subscriber.py" />
+        <option value="$PROJECT_DIR$/MQTT_first_steps/README" />
+        <option value="$PROJECT_DIR$/_my_shell_scripts/mantoj.sh" />
+        <option value="$PROJECT_DIR$/_my_shell_scripts/mantoj.pl" />
       </list>
     </option>
   </component>
@@ -86,7 +99,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -96,17 +108,25 @@
             </path>
             <path>
               <item name="RasPi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="RasPi" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="RasPi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RasPi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RasPi" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="RasPi" type="462c0819:PsiDirectoryNode" />
+              <item name="_my_shell_scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../misc/picamera" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="PERL5_MAIN_SETTINGS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -344,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1499969312831</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="updated from python2 to python3">
+      <created>1524052490106</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1524052490106</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -358,47 +385,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="34" width="1144" height="736" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49076518" visible="true" weight="0.61625874" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.48840803" weight="0.30097088" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50265753" side_tool="true" weight="0.23916294" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32517484" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" visible="true" weight="0.34185302" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49734244" visible="true" weight="0.23961662" />
-      <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.24884081" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32920355" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24954462" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" sideWeight="0.50923485" side_tool="true" weight="0.36" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Data View" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.48686245" weight="0.24595469" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Messages" order="7" />
-    </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49076518" visible="true" weight="0.21097372" />
-      <window_info id="Structure" order="1" weight="0.24884081" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.48840803" weight="0.30097088" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Python Console" order="9" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32920355" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.51622874" side_tool="true" weight="0.24595469" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.075555556" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.48686245" weight="0.24595469" />
-      <window_info anchor="bottom" id="Messages" order="7" />
-      <window_info id="Favorites" order="2" sideWeight="0.50923485" side_tool="true" weight="0.36" />
-    </layout-to-restore>
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -440,7 +447,8 @@
     <MESSAGE value="added dir _my_shell_scripts w/ files" />
     <MESSAGE value="added gitclone.sh&#10;removed gitclone_misc.sh and gitclone_UH.sh" />
     <MESSAGE value="one central script w/ sym links in _my_shell_scripts" />
-    <option name="LAST_COMMIT_MESSAGE" value="one central script w/ sym links in _my_shell_scripts" />
+    <MESSAGE value="updated from python2 to python3" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated from python2 to python3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -448,6 +456,20 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MQTT_first_steps/mqtt_subscriber.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MQTT_first_steps/mqtt_publisher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/classes/Adafruit_GPIO/MCP230xx.py" />
     <entry file="file://$PROJECT_DIR$/classes/Adafruit_CharLCD_examples/char_lcd_mcp.py" />
     <entry file="file://$PROJECT_DIR$/classes/Adafruit_GPIO/MCP230xx.py" />
@@ -590,6 +612,37 @@
           <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MQTT_first_steps/mqtt_publisher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MQTT_first_steps/mqtt_subscriber.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MQTT_first_steps/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="73" selection-start-line="1" selection-start-column="73" selection-end-line="1" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_my_shell_scripts/mantoj.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_my_shell_scripts/mantoj.pl">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

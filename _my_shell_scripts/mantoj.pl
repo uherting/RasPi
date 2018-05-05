@@ -32,9 +32,3 @@ my $var_new;
   open($fhw, '>', $file) || die "W: can't open $file: $!";
   print $fhw $var;
   close($fhw);
-
-
-#print("\n");
-#print("#content#\n");
-#print("#$var#\n");
-
