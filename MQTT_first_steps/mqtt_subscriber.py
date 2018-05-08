@@ -5,6 +5,10 @@ MQTT_PATH = "/home/test"
 MQTT_PORT = 1883
 MQTT_KEEPALIVE = 60
 
+#
+# define 'some' functions
+#
+
 # The callback for when the client receives a CONNACK response from the server.
 def on_connect(client, userdata, flags, rc):
     print("Connected with result code " + str(rc))
@@ -19,6 +23,9 @@ def on_message(client, userdata, msg):
     print(msg.topic + " " + str(msg.payload))
     # more callbacks, etc
 
+#
+# main part starts here
+#
 
 client = mqtt.Client()
 client.on_connect = on_connect
