@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/classes" isTestSource="false" />
-    </content>
-    <content url="file://$MODULE_DIR$/../../misc/Adafruit_Python_CharLCD/Adafruit_CharLCD" />
-    <content url="file://$MODULE_DIR$/../../misc/Adafruit_Python_DHT" />
-    <content url="file://$MODULE_DIR$/../../misc/Adafruit_Python_GPIO/Adafruit_GPIO" />
-    <content url="file://$MODULE_DIR$/../../misc/Adafruit_Python_SSD1306/Adafruit_SSD1306" />
-    <content url="file://$MODULE_DIR$/../../misc/RPi-MCP23S17/RPiMCP23S17" />
-    <content url="file://$MODULE_DIR$/../../misc/mxgxw_MFRC522-python" />
-    <content url="file://$MODULE_DIR$/../../misc/picamera" />
-    <content url="file://$MODULE_DIR$/../../misc/python-gpiozero" />
-    <content url="file://$MODULE_DIR$/../../misc/rasplay_MFRC522-python" />
-    <orderEntry type="jdk" jdkName="Python 3.5.3 (/usr/bin/python3.5)" jdkType="Python SDK" />
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">

@@ -3,12 +3,13 @@
 BNAME=`basename $0 .sh`
 DNAME=`dirname $0`
 DIR_NAME=`echo "$BNAME" | cut -f 2 -d "_"`
+REPO_PATH=`echo "$BNAME" | cut -f 2- -d "_"`
 
 if [ "${BNAME}" == "gitclone" ]
 then
   # create sym links if not existing
   cd ${DNAME}
-  for TGT in gitclone_misc.sh gitclone_UH.sh
+  for TGT in gitclone_misc.sh gitclone_misc_upd.sh gitclone_UH.sh
   do
     if [ ! -h ${TGT} ]
     then
@@ -21,6 +22,7 @@ fi
 
 if [ ! -d ${DIR_NAME} ]
 then
+  echo
   # if the dir does not exist then show the index finger or so...
   echo "dir ${DIR_NAME} does not exist!"
   exit 1
@@ -53,21 +55,17 @@ then
     uh_gitclone https://github.com/adafruit/Adafruit_Python_CharLCD.git
     uh_gitclone https://github.com/adafruit/Adafruit_Python_GPIO.git
     uh_gitclone https://github.com/mxgxw/MFRC522-python.git
-    mv MFRC522-python MFRC522-python---mxgxw
-    uh_gitclone https://github.com/rasplay/MFRC522-python.git
-    mv MFRC522-python MFRC522-python---rasplay
     uh_gitclone https://github.com/steve71/RasPiBrew.git
     uh_gitclone https://github.com/timofurrer/w1thermsensor.git
     uh_gitclone https://github.com/python-telegram-bot/python-telegram-bot.git
+    uh_gitclone https://github.com/nickoala/telepot.git
 
     # clone repositories which are necessary for epsilon only
-    if [ "`hostname`" == "epsilon" ]
-    then
-      uh_gitclone https://github.com/nodemcu/nodemcu-devkit-v1.0.git
-      uh_gitclone https://github.com/nodemcu/nodemcu-firmware.git
-    else
-      uh_gitclone https://github.com/nickoala/telepot.git
-    fi
+#    if [ "`hostname`" == "epsilon" ]
+#    then
+#      uh_gitclone https://github.com/nodemcu/nodemcu-devkit-v1.0.git
+#      uh_gitclone https://github.com/nodemcu/nodemcu-firmware.git
+#    fi
 
     cd -
 fi
