@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a529643-a8d3-4abf-8e46-9909ee82a641" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Telegram/telegramBot01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/sudo_customise.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/sudo_loop_mount.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/sudo_loop_mount_mnt.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/sudo_loop_mount_umnt.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/sudo_write_raspbian.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/sudo_write_raspbian_additional.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/RasPi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RasPi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/uwe.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/perl5local.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_my_shell_scripts/gitclone.sh" beforeDir="false" afterPath="$PROJECT_DIR$/all_my_shell_scripts/gitclone.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_my_shell_scripts/mantoj.pl" beforeDir="false" afterPath="$PROJECT_DIR$/all_my_shell_scripts/mantoj.pl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_my_shell_scripts/mantoj.sh" beforeDir="false" afterPath="$PROJECT_DIR$/all_my_shell_scripts/mantoj.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_my_shell_scripts/mv_done_mp3_to_music.sh" beforeDir="false" afterPath="$PROJECT_DIR$/all_my_shell_scripts/mv_done_mp3_to_music.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/gitclone_UH.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/gitclone_misc.sh" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,7 +25,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -56,6 +36,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -85,6 +66,14 @@
       <option name="presentableId" value="Default" />
       <updated>1527156511445</updated>
     </task>
+    <task id="LOCAL-00001" summary="added shell scripts for updating Raspbian img files&#10;added MFRC lib of github user rasplay (might be outdated)">
+      <created>1527168657919</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1527168657920</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -92,9 +81,9 @@
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24949966" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5023349" side_tool="true" visible="true" weight="0.3287841" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4976651" visible="true" weight="0.3287841" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -111,5 +100,9 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added shell scripts for updating Raspbian img files&#10;added MFRC lib of github user rasplay (might be outdated)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added shell scripts for updating Raspbian img files&#10;added MFRC lib of github user rasplay (might be outdated)" />
   </component>
 </project>
