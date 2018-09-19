@@ -2,14 +2,105 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a529643-a8d3-4abf-8e46-9909ee82a641" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Telegram/telegramBot02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RasPi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RasPi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/README_website_copy.tar.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/Favicon-0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/Raspberry-Pi-Zero-W.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/_xUJvAAdHK8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/_xUJvAAdHK8_data/MgaOaFuzNRitgJev3pjUPCLRunxfo7J18TtCmzrnOHc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/_xUJvAAdHK8_data/ad_status.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/_xUJvAAdHK8_data/base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/_xUJvAAdHK8_data/remote.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/_xUJvAAdHK8_data/www-embed-player.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/_xUJvAAdHK8_data/www-player-vfl6eE_Uv.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/a.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/a_002.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/analytics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/anchor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/anchor_002.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/bframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/bframe_002.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/bframe_data_002/40Of-2HzrZbb7DsVEQuYqaKq_cn2qs_xLY-6DA5pnDc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/bframe_data_002/styles__ltr.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/cart-fragments.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/comment-reply.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/create-user-on-order.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/css.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/df-h.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/flatsome-infinite-scroll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/flatsome-live-search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/flatsome.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/hoverIntent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/hqei5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/hqei5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/hqei5_002.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/hqei5_002.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/hqei5_003.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/hqei5_003.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/hqei5_004.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/hqet9.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/recaptcha__en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/webfont.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/woocommerce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/woocommerce_002.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/wp-embed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspbian Stretch Headless Setup on Raspberry Pi Zero, Zero W, Pi 3 – Hobbytronics Pakistan_files/wp-emoji-release.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/Raspi headless installation - preparations.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_my_shell_scripts/RaspiHeadlessSetupPrep/Raspi headless installation - preparations/website_copy__openFilesInAbrowserAtYourOwnRisk.tar" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-389542478">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Telegram/telegramBot02.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Telegram/telegramBot01.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,6 +123,11 @@
               <item name="RasPi" type="b2602c69:ProjectViewProjectNode" />
               <item name="RasPi" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="RasPi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RasPi" type="462c0819:PsiDirectoryNode" />
+              <item name="Telegram" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -40,8 +136,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="/usr/bin/python3.5" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Telegram" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -78,24 +179,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="128" y="28" width="1522" height="939" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24949966" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5023349" side_tool="true" visible="true" weight="0.3287841" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4976651" visible="true" weight="0.3287841" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.503002" side_tool="true" visible="true" weight="0.32880098" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.496998" visible="true" weight="0.32880098" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -104,5 +206,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added shell scripts for updating Raspbian img files&#10;added MFRC lib of github user rasplay (might be outdated)" />
     <option name="LAST_COMMIT_MESSAGE" value="added shell scripts for updating Raspbian img files&#10;added MFRC lib of github user rasplay (might be outdated)" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Telegram/telegramBot02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Telegram/telegramBot01.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
   </component>
 </project>
