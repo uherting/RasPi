@@ -29,7 +29,7 @@ import debuguh # can be found only after sys.path.append() as it is not centrall
 pin_motion_sensor = 4
 pin_led = 16
 used_sensor_01 = MotionSensor(pin_motion_sensor)  # PIR connected to pin x
-sensor_01_aktiv = True
+sensor_01_active = True
 led_01 = LED(pin_led)  # LED connected to pin x
 capture_enable = False
 
@@ -39,23 +39,23 @@ camera = PiCamera()
 
 def current_time(val_a, val_b):
     local_time = time.localtime()
-    jahr, monat, tag = local_time[0:3]
-    stunde, minute, sekunde = local_time[3:6]
-    system_time = str(stunde).zfill(2) + ":" + str(minute).zfill(2) + ":" + str(sekunde).zfill(2)
-    system_date = str(tag).zfill(2) + "." + str(monat).zfill(2) + "." + str(jahr)
+    now_year, now_month, now_day = local_time[0:3]
+    now_hour, now_minute, now_second = local_time[3:6]
+    system_time = str(now_hour).zfill(2) + ":" + str(now_minute).zfill(2) + ":" + str(now_second).zfill(2)
+    system_date = str(now_day).zfill(2) + "." + str(now_month).zfill(2) + "." + str(now_year)
 
     if val_a == "time" and val_b == "date":
-        determined_time = system_time + " " + system_date
+        time_to_return = system_time + " " + system_date
     elif val_a == "date" and val_b == "time":
-        determined_time = system_date + " " + system_time
+        time_to_return = system_date + " " + system_time
     elif val_a == "time" and val_b == "":
-        determined_time = system_time
+        time_to_return = system_time
     elif val_a == "date" and val_b == "":
-        determined_time = system_date
+        time_to_return = system_date
     else:
-        determined_time = local_time
+        time_to_return = local_time
 
-    return determined_time
+    return time_to_return
 
 
 def capture():
@@ -63,12 +63,12 @@ def capture():
     camera.capture('/home/pi/%s.jpg' % time_stamp)
 
 
-def sensoren_abfrage():
-    global used_sensor_01, sensor_01_aktiv, led_01, camera, capture_enable
+def sensors_check():
+    global used_sensor_01, sensor_01_active, led_01, camera, capture_enable
 
-    print("Thread zur Sensorenabfrage gestartet.")
+    print("Thread for checking sensors started.")
 
-    while sensor_01_aktiv:
+    while sensor_01_active:
         used_sensor_01.wait_for_motion()
         print("Motion detected at " + current_time("time", "date"))
 
@@ -79,6 +79,7 @@ def sensoren_abfrage():
 
         time.sleep(1)
         led_01.off()
+
 
 # a few debug tests first
 #  script global setting of debugging and create the object to the debug class
@@ -94,21 +95,21 @@ duh.show_info(debug)
 #
 #
 
-# Abfrage des PIR Sensors in eigenem Thread starten
-sensorenAbfrageThread = threading.Thread(target=sensoren_abfrage)
-sensorenAbfrageThread.start()
-# time.sleep(5)  # damit alle Sensorwerte zum Start eingelesen sind
+# start check of PIR sensor in its own thread
+sensors_check_thread = threading.Thread(target=sensors_check)
+sensors_check_thread.start()
+# time.sleep(5)  # all sensor values have to be read right at the beginning
 
-# Hauptroutine
-# TODO: main loop finishes after z loops for debugging purposes
-z = 0
-
-while z < 5:
+# main routine
+# the main loop finishes after z loops for debugging purposes
+z = 5
+i = 0
+while i < z:
     # display of time and date
-    # bei Abfrage "date","time" ändert die Reihenfolge der Ausgabe
+    # current_time("date","time") will change the order of the output
     displayTime = current_time("time", "date")
     print(displayTime)
 
     time.sleep(5)
 
-    z += 1
+    i += 1
