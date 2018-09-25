@@ -3,7 +3,7 @@
 import os
 import time
 from subprocess import *
-from telepot import *
+import telepot
 
 botName = "TelegramBot"  # your bot name
 botToken = "bla"  # your bot token
@@ -86,6 +86,7 @@ if __name__ == "__main__":
     Bot.message_loop(message_handler)
 
     time.sleep(1)  # note: if you want pretty and stable code you don't use delays (but i use it anyway)
+
     for Item in receiver:
         Bot.sendMessage(Item, "Raspberry Pi online.")
 
