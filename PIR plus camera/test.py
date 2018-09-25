@@ -29,7 +29,6 @@ import debuguh # can be found only after sys.path.append() as it is not centrall
 pin_motion_sensor = 4
 pin_led = 16
 used_sensor_01 = MotionSensor(pin_motion_sensor)  # PIR connected to pin x
-sensor_01_active = True
 led_01 = LED(pin_led)  # LED connected to pin x
 capture_enable = False
 
@@ -64,11 +63,11 @@ def capture():
 
 
 def sensors_check():
-    global used_sensor_01, sensor_01_active, led_01, camera, capture_enable
+    global used_sensor_01, led_01, camera, capture_enable
 
     print("Thread for checking sensors started.")
 
-    while sensor_01_active:
+    while True:
         used_sensor_01.wait_for_motion()
         print("Motion detected at " + current_time("time", "date"))
 
