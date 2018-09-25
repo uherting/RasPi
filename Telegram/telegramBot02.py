@@ -1,9 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import os
 import time
 from subprocess import *
-from teleport import *
+from telepot import *
 
 botName = "TelegramBot"  # your bot name
 botToken = "bla"  # your bot token
