@@ -8,12 +8,16 @@
 BNAME=`basename $0 .sh`
 DNAME=`dirname $0`
 
-
-if [ "${BNAME}" == "sudo_loop_mount" ]
+# if this script was called under its real name it just creates
+# the sym links sudo_loop_mount_mnt and sudo_loop_mount_umnt which
+# are to be used to mount the image on a loop device.
+if [ "${BNAME}" == "loop_mount" ]
 then
+  # change to the directory where this script is located
+  # (the sym links are created at the same location as the script is located)
   cd ${DNAME}
 
-  for TGT in sudo_loop_mount_mnt sudo_loop_mount_umnt
+  for TGT in loop_mount_mnt loop_mount_umnt
   do
     if [ ! -h ${TGT} ]
     then
@@ -22,6 +26,7 @@ then
     fi
   done
 
+  # change back to the directory where we came from
   cd -
 
   echo "sym links were created"
@@ -36,9 +41,13 @@ fi
 
 
 # mount the image and its containing partitions
-if [ "${BNAME}" == "sudo_loop_mount_mnt" ]
+if [ "${BNAME}" == "loop_mount_mnt" ]
 then
   img=`readlink -f $1`
+  echo "The given file name of the image points to ${img}. If this is not correct please push CTRL-c."
+  echo "Otherwise push ENTER to continue."
+  read dummy_value
+
   # mount the img file on the next available loop device and assign the name of the device to a variable
   dev="$(sudo losetup --show -f -P "$img")"
   echo "$dev"
@@ -56,12 +65,16 @@ fi
 
 
 # unmount the image and its containing partitions from 
-if [ "${BNAME}" == "sudo_loop_mount_umnt" ]
+if [ "${BNAME}" == "loop_mount_umnt" ]
 then
   img=`readlink -f $1`
+  echo "The given file name of the image points to ${img}. If this is not correct please push CTRL-c."
+  echo "Otherwise push ENTER to continue."
+  read dummy_value
 
   # define the loop device
-  dev="`sudo losetup -l | grep /home/uwe/Downloads/Raspi/2018-99-99-raspbian-stretch-lite.img | cut -f1 -d\" \"`"
+  # dev="`sudo losetup -l | grep /home/uwe/Downloads/Raspi/2018-99-99-raspbian-stretch-lite.img | cut -f1 -d\" \"`"
+  dev="`sudo losetup -l | grep ${img} | cut -f1 -d\" \"`"
 
   # loop through the partitions presented through the loop dev and unmount them
   for part in "$dev"?*; do
@@ -76,10 +89,13 @@ then
 fi
 
 
-# Example:
-# ========
-# $ # mount the file to a loop device
-# $ sudo_loop_mount_mnt my.img
+# What is intended by the use of the sym links pointing to this scripts?
+# ======================================================================
+#
+# Here explanations by displaying what is done:
+# ---------------------------------------------
+# 1) mount the file to a loop device
+# $ loop_mount_mnt my.img
 # /dev/loop0
 # /mnt/loop0p1
 # /mnt/loop0p2
@@ -90,14 +106,14 @@ fi
 # /youhave
 # /there
 #
-# $ # proof of mounting activity by using "sudo losetup -l"
+# 2) proof of mounting activity by using "sudo losetup -l"
 # $ sudo losetup -l
 # NAME       SIZELIMIT OFFSET AUTOCLEAR RO BACK-FILE  DIO
 # /dev/loop1         0      0         0  0 /full/path/to/my.img
 #
-# $ # umount the partitions and the img file
+# 3) umount the partitions and the img file
 # $ # Cleanup.
-# $ sudo_loop_mount_umntsudo_loop_mount_umnt 0
+# $ loop_mount_umnt my.img
 # $ ls /mnt/loop0p1
 # $ ls /dev | grep loop0
 # loop0

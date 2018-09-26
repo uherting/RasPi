@@ -1,3 +1,5 @@
+#!/bin/bash
+
 DNAME=`dirname $0`
 BNAME=`basename $0 .sh`
 FILENAME_BASE="$HOME/Desktop/cnp"

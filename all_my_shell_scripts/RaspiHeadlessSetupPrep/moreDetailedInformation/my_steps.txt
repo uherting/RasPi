@@ -8,15 +8,15 @@ Raspberry Pi Zero W - headerless setup
 - unmount partitions 'boot' and 'rootfs' mounted from the SD card
 - put the card into the Raspberry Pi Zero W and boot it with no hardware connected
 
-Reconfigure the Raspi:
+Fine tuning the Raspi after starting it for the first time:
 - sudo apt-get update
 - sudo apt-get upgrade
-- raspi-config
+- execute raspi-config
   - enable camera
   - enable SPI
   - enable I2C
   - disable Bluetooth
   - change password
 - install log2ram
-- disable powersaving on WiFi: "iw dev wlan0 set power_save off"
+- disable power saving on WiFi: "iw dev wlan0 set power_save off"
 
