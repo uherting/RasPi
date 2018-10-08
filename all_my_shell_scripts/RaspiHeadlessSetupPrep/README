@@ -4,44 +4,52 @@ Introduction to the shell scripts
 The scripts are thought to be helper scripts for downloading, customising,
 and writing an image of the Linux distribution Raspbian to a SD card.
 
-Attention
----------
-In order to create necessary sym links the script "loop_mount.sh" has to
-be executed without any parameters. See section "Additional Customisation"
-on how to use them.
 
 Order of execution
 ------------------
 Here are the actions and the commands plus some explanation on the tasks / results.
 
-1) Downloading: raspbian_GetLatest.sh <lite/desktop>
-   The latest version of Raspbian will get downloaded. The parameter
-   determines whether the lite (no GUI) or desktop version will be
-   downloaded.
-   The file name will be something like ...
-   "2018-06-27-raspbian-stretch-lite.zip". The URL used for the retrieval
-   is generic and so it will hopefully work with the next major release
-   after stretch.
+1) Downloading: "sudo raspbian_GetLatest.sh <lite|desktop>"
+   The latest version of Raspbian will get downloaded to the directory 
+   ${IMG_LOCATION} defined in the file mod.conf. The parameter determines
+   whether the lite (no GUI) or desktop version will be downloaded.
 
-2) Mounting the image: loop_mount.sh <filenameOfRaspbianImage>
+   The file name will be something like "2018-06-27-raspbian-stretch-lite.zip".
+   The URL used for the retrieval is generic and so it will hopefully work
+   with the next major release(s) after Raspbian Stretch.
 
-3) Writing customisation to the target directories: write_raspbian_additional.sh
+2) Mounting the image: loop_mount_mnt /path/to/my/image/my.img (optional parameter)
+   This mounts the latest image file (according to the timestamp in file
+   in the directory ${IMG_LOCATION_EDIT}). If an image file name is given
+   it will be used instead.
 
-4) Unmounting the image: loop_mount.sh <filenameOfRaspbianImage>
+3) Writing customisation to the mounted image: customise_details.sh
 
-5) Writing the image to the SD card: write_raspbian.sh <lite/desktop>
-   This script writes the latest image file to the SD card. The latest
-   image is determined by the date/time stamp given in the file name.
+4) Unmounting the image: loop_mount_umnt /path/to/my/image/my.img (optional parameter)
+   This unmounts the latest image file (according to the timestamp in file
+   in the directory ${IMG_LOCATION_EDIT}). If an image file name is given
+   it will be used instead
+
+5) Writing the image to the SD card: write_raspbian.sh <image filename> <SD card device>
+   This script writes the latest image file to the SD card. The parameters 
+   are optional, so either no parameter or two.
+
+   This mounts the latest image file (according to the timestamp in file
+   in the directory ${IMG_LOCATION_EDIT}). If an image file name is given
+   it will be used instead.
 
 
 Additional Customisation
 ------------------------
-The image can be modified by mounting it as a loop device. This should
-be done prior to writing the image to a SD card.
+The image can be modified by mounting it as a loop device. This is normally
+done prior to writing the image to a SD card.
 
 The following scripts take care of mounting / unmounting the image file.
- - Mounting the image: loop_mount.sh <filenameOfRaspbianImage>
- - Unmounting the image: loop_mount.sh <filenameOfRaspbianImage>
+ - Mounting the image: loop_mount_mnt.sh <filenameOfRaspbianImage>
+ - Unmounting the image: loop_mount_umnt.sh <filenameOfRaspbianImage>
+Attention:
+Both scripts are sym links pointing to loop_mount_main.sh. They get created
+by executing any of the scripts or explicitly by executing mod.conf.
 
 
 

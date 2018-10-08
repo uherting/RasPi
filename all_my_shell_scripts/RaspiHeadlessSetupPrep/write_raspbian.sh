@@ -2,35 +2,59 @@
 
 # This scripts writes the latest image file to the SD card.
 # The latest image is determined by the date/time stamp given in the file name.
+
+if [ "`whoami`" != "root" ]
+then
+  echo "NOTE: For execution of this script you need root use priviledges. Script stops here."
+  exit 99
+fi
+
 BNAME=`basename $0 .sh`
 DNAME=`dirname $0`
 
-# define the location where the image file is located
-IMG_ROOT_DIR="/home/uwe/Downloads/Raspi"
+. ${DNAME}/mod.conf
 
-if [ $# -lt 1 ]
+if [ $# -gt 2 ]
 then
-  echo "version expected (lite or desktop)"
+  echo "Usage: more than two parameters are not allowed."
   exit 1
 fi
 
-VERSION=""
-if [ "$1" == "lite" ]; then
-  VERSION="-lite"
+if [ $# -eq 2 ]
+then
+  DEVICE_WR=$2
 fi
 
-if [ "$1" == "desktop" ]; then
-  VERSION=""
+
+# check if given file exist 
+# if no file name was given try to take the latest
+# according to the timestamp in file in the directory ${IMG_LOCATION_EDIT}
+if [ $# -eq 1 ]
+then
+  IMG_FILE=$1
+
+  if [ ! -f ${IMG_FILE} ]
+  then
+    echo "Image file was not found: ${IMG_FILE}"
+    exit 2 
+  fi
+else
+  echo "Checking for newest image file according to the timestamp in file"
+  IMG_FILE=`ls ${IMG_LOCATION_EDIT}/*.img | sort | tail -n 1`
+
+  if [ ! -f ${IMG_FILE} ]
+  then
+    echo "No image file found in directory ${IMG_LOCATION_EDIT}"
+    exit 3 
+  fi
 fi
 
-IMG_FILE=`ls -d ${IMG_ROOT_DIR}/*-raspbian-stretch${VERSION}.img | sort | tail -n1`
-DEVICE_WR=/dev/mmcblk0
 
-echo "${IMG_FILE} gets written to TF card at ${DEVICE_WR}"
-echo "In case this is not the image you want to be written or"
-echo "the intended target device please push CTRL-c to stop the process"
-echo "Otherwise push ENTER to start writing the image file ${IMG_FILE} to ${DEVICE_WR}"
-read dummy_value
+echo "${IMG_FILE} gets written to SD card at ${DEVICE_WR}"
+#echo "In case this is not the image you want to be written or"
+#echo "the intended target device please push CTRL-c to stop the process"
+#echo "Otherwise push ENTER to start writing the image file ${IMG_FILE} to ${DEVICE_WR}"
+#read dummy_value
 
 echo "start at `date`"
 time sudo dd bs=4M if=${IMG_FILE} of=${DEVICE_WR} status=progress

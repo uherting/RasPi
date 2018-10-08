@@ -1,8 +1,15 @@
 #!/bin/bash
 
+if [ "`whoami`" != "root" ]
+then
+  echo "NOTE: For execution of this script you need root use priviledges. Script stops here."
+  exit 99
+fi
+
 BNAME=`basename $0 .sh`
 DNAME=`dirname $0`
 
+. ${DNAME}/mod.conf
 
 echo "No proper programming done here so far. Sorry."
 exit 1
