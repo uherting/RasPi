@@ -1,3 +1,6 @@
+# SQLite directory
+home_automation_231.db
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

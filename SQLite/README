@@ -1,0 +1,3 @@
+see also directory JSON for JSON functionality in context with the MQTT functionality
+of answering requests with a generic sensor name.
+(in => 18B20 sensor address, out => generic sensor name)
