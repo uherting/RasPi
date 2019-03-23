@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9a529643-a8d3-4abf-8e46-9909ee82a641" name="Default" comment="added several files related to the topics JSON, MQTT and SQLite">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MQTT_sensoraddr_2_genname/mqtt_sensoraddr_2_genname.py" beforeDir="false" afterPath="$PROJECT_DIR$/MQTT_sensoraddr_2_genname/mqtt_sensoraddr_2_genname.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PIR plus camera/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/PIR plus camera/test.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,13 +12,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="RasPi" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MQTT_sensoraddr_2_genname/mqtt_sensoraddr_2_genname.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="324">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -61,7 +64,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/PIR plus camera/test.py" />
         <option value="$PROJECT_DIR$/Compare_RPIGPIO_and_gpiozero/rpigpio.py" />
         <option value="$PROJECT_DIR$/Compare_RPIGPIO_and_gpiozero/gpiozero.py" />
         <option value="$PROJECT_DIR$/Telegram/t.py" />
@@ -102,6 +104,7 @@
         <option value="$PROJECT_DIR$/MQTT_first_steps/mqtt_subscriber.py" />
         <option value="$PROJECT_DIR$/MQTT_sensoraddr_2_genname/README" />
         <option value="$PROJECT_DIR$/MQTT_sensoraddr_2_genname/mqtt_sensoraddr_2_genname.py" />
+        <option value="$PROJECT_DIR$/PIR plus camera/test.py" />
       </list>
     </option>
   </component>
@@ -121,27 +124,7 @@
           <expand>
             <path>
               <item name="RasPi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RasPi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RasPi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RasPi" type="462c0819:PsiDirectoryNode" />
-              <item name="BoardInfo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RasPi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RasPi" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RasPi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RasPi" type="462c0819:PsiDirectoryNode" />
-              <item name="JSON" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RasPi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RasPi" type="462c0819:PsiDirectoryNode" />
-              <item name="MQTT_sensoraddr_2_genname" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -151,8 +134,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.project" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -353,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543608654094</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added several files related to the topics JSON, MQTT and SQLite">
+      <created>1550584411321</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1550584411321</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -367,11 +358,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="25" width="1629" height="1025" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18555418" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6640625" visible="true" weight="0.18555418" />
+      <window_info id="Structure" order="1" sideWeight="0.3359375" side_tool="true" weight="0.18555418" />
+      <window_info id="Favorites" order="2" sideWeight="0.3359375" side_tool="true" weight="0.18555418" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.498132" weight="0.328125" />
@@ -441,13 +431,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/MCP23S17/test_old.py" />
-    <entry file="file://$PROJECT_DIR$/PIR plus camera/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Compare_RPIGPIO_and_gpiozero/rpigpio.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -651,6 +634,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/JSON/json_pretty_printing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="74" lean-forward="true" selection-start-column="12" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MQTT_sensoraddr_2_genname/README">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -658,10 +648,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JSON/json_pretty_printing.py">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+    <entry file="file://$PROJECT_DIR$/PIR plus camera/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="74" lean-forward="true" selection-start-column="12" selection-end-column="74" />
+        <state relative-caret-position="-794">
+          <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MQTT_sensoraddr_2_genname/mqtt_sensoraddr_2_genname.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -672,15 +673,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MQTT_sensoraddr_2_genname/mqtt_sensoraddr_2_genname.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

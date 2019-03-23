@@ -23,7 +23,7 @@ from picamera import PiCamera
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + '/classes')
 
 # import custom classes
-import debuguh # can be found only after sys.path.append() as it is not centrally installed
+import debuguh  # can be found only after sys.path.append() as it is not centrally installed
 
 # create objects from gpiozero classes
 pin_motion_sensor = 4
