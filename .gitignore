@@ -1,3 +1,12 @@
+# by UH
+config.ini
+modules_for_programming.tar
+gpiozero
+gpiozerocli
+paho
+picamera
+telepot
+
 # SQLite directory
 home_automation_231.db
 

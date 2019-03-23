@@ -1,12 +1,14 @@
-#!/usr/bin/python
-
 #
-# test script for ...
-# playing around with motion detection (PIR and the camera)
+#
+# purpose: playing around with motion detection (PIR and the camera)
+# trigger: PIR
+# hostname:
+# location:
+#
 #
 
-import sys
-import os
+# import sys
+# import os
 import time
 import threading
 # from datetime import datetime
@@ -17,13 +19,8 @@ import datetime
 from gpiozero import MotionSensor, LED
 from picamera import PiCamera
 
-
-# add classes directory of current project to the search path in order
-# to find custom classes used in this script
-sys.path.append(os.path.dirname(os.path.realpath(__file__)) + '/classes')
-
 # import custom classes
-import debuguh  # can be found only after sys.path.append() as it is not centrally installed
+import debuguh
 
 # create objects from gpiozero classes
 pin_motion_sensor = 4
